@@ -1,0 +1,18 @@
+{
+  "dependencies": {
+    "body-parser": "~1.0.2",
+    "config": "~0.4.35",
+    "connect-redis": "~2.0.0",
+    "cookie-parser": "~1.0.1",
+    "cors": "^2.3.1",
+    "debug": "~0.8.1",
+    "express": "~4.1.0",
+    "express-session": "~1.0.3",
+    "passport": "~0.2.0",
+    "passport-ninja-blocks": "git+https://497ab28931e76036f81290607d59c4585c5369da:x-oauth-basic@github.com/ninjablocks/passport-ninja-blocks.git",
+    "simple-errors": "0.0.4",
+    "then-redis": "~0.3.12",
+    "when": "~3.1.0"
+  },
+  "devDependencies": {}
+}
