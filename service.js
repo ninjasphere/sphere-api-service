@@ -13,6 +13,7 @@ var service = usvc.microService({
 
 	// rpc interface
 	activationService: usvc.facets.rpc.jsonClient(),
+	modelStoreService: usvc.facets.rpc.jsonClient(),
 
 	// external rest api
 	frontendRest: usvc.facets.web.express(require('./lib/web'), {depends: ['redis']}),
