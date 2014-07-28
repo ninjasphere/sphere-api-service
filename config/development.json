@@ -36,7 +36,7 @@
 	"modelStoreService": {
 		"server": {
 			"hostname": "localhost",
-			"port": 5100
+			"port": 5600
 		},
 		"signing": {
 			"sign": true,
