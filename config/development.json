@@ -4,7 +4,7 @@
 		"tokenURL": "http://localhost:3333/oauth/token",
 		"clientID": "123",
 		"clientSecret": "456789",
-		"callbackURL": "http://localhost:8000/auth/ninja/callback",
+		"callbackURL": "http://localhost:5200/auth/ninja/callback",
 		"userProfileURL": "http://localhost:3333/api/v1/userinfo"
 	},
 	"sessions": {
