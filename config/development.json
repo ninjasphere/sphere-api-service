@@ -42,5 +42,10 @@
 			"sign": true,
 			"secret": "secret123"
 		}
+	},
+	"pullConfiguration": {
+		"environment": {
+			
+		}
 	}
 }
