@@ -1,0 +1,16 @@
+{
+  "AWSEBDockerrunVersion": "1",
+  "Authentication": {
+    "Bucket": "ninjablocks-sphere-docker",
+    "Key": "dockercfg"
+  },
+  "Image": {
+    "Name": "docker-registry.ninjablocks.co/ninjablocks/sphere-api-service:<TAG>",
+    "Update": "true"
+  },
+  "Ports": [
+    {
+      "ContainerPort": "5200"
+    }
+  ]
+}
