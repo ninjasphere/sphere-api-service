@@ -14,7 +14,7 @@
     "passport-ninja-blocks": "git+https://497ab28931e76036f81290607d59c4585c5369da:x-oauth-basic@github.com/ninjablocks/passport-ninja-blocks.git",
     "simple-errors": "0.0.4",
     "then-redis": "~0.3.12",
-    "usvc": "git+ssh://git@github.com:ninjablocks/usvc.git",
+    "usvc": "ninjablocks/usvc",
     "when": "~3.1.0"
   },
   "devDependencies": {}

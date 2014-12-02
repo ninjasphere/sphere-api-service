@@ -1,0 +1,42 @@
+{
+  "oauth": {
+    "authorizationURL": "https://id.sphere.ninja/dialog/authorize",
+    "tokenURL": "https://id.sphere.ninja/oauth/token",
+    "clientID": "123",
+    "clientSecret": "456789",
+    "callbackURL": "https://api.sphere.ninja/auth/ninja/callback",
+    "userProfileURL": "https://id.sphere.ninja/api/v1/userinfo"
+  },
+  "sessions": {
+    "secret": "keyboard cat",
+    "store": {
+      "type": "redis",
+      "options": {
+      }
+    }
+  },
+  "redis": {
+    "url": "tcp://127.0.0.1:6379/"
+  },
+  "frontendRest": {
+    "port": 5200
+  },
+  "activationService": {
+    "server": {
+      "hostname": "activation.sphere.ninja",
+      "port": 80
+    },
+    "signing": {
+      "sign": true
+    }
+  },
+  "modelStoreService": {
+    "server": {
+      "hostname": "model.sphere.ninja",
+      "port": 80
+    },
+    "signing": {
+      "sign": true
+    }
+  }
+}
