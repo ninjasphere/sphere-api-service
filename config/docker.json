@@ -1,0 +1,51 @@
+{
+  "oauth": {
+    "authorizationURL": "http://douitsu:3333/dialog/authorize",
+    "tokenURL": "http://douitsu:3333/oauth/token",
+    "clientID": "123",
+    "clientSecret": "456789",
+    "callbackURL": "http://douitsu:5200/auth/ninja/callback",
+    "userProfileURL": "http://douitsu:3333/api/v1/userinfo"
+  },
+  "sessions": {
+    "secret": "keyboard cat",
+    "store": {
+      "type": "redis",
+      "options": {
+        "host": "redis",
+        "port": 6379
+      }
+    }
+  },
+  "redis": {
+    "url": "tcp://redis:6379/"
+  },
+  "frontendRest": {
+    "port": 5200
+  },
+  "activationService": {
+    "server": {
+      "hostname": "localhost",
+      "port": 5100
+    },
+    "signing": {
+      "sign": true,
+      "secret": "secret123"
+    }
+  },
+  "modelStoreService": {
+    "server": {
+      "hostname": "localhost",
+      "port": 5600
+    },
+    "signing": {
+      "sign": true,
+      "secret": "secret123"
+    }
+  },
+  "pullConfiguration": {
+    "environment": {
+
+    }
+  }
+}
