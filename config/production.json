@@ -23,7 +23,7 @@
   },
   "activationService": {
     "server": {
-      "hostname": "activation.sphere.ninja",
+      "hostname": "activation.internal.sphere.ninja",
       "port": 80
     },
     "signing": {
@@ -32,7 +32,7 @@
   },
   "modelStoreService": {
     "server": {
-      "hostname": "model.sphere.ninja",
+      "hostname": "model.internal.sphere.ninja",
       "port": 80
     },
     "signing": {
