@@ -77,6 +77,12 @@ POST `https://api.sphere.ninja/rest/v1/activation/sites/XXXX-XXXX-XXXX-XXXX-XXXX
 DELETE `https://api.sphere.ninja/rest/v1/node/TLC123?access_token=TOKEN_HERE`
 
 ```json
+{
+   "type" : "object",
+   "data" : {
+      "success" : true
+   }
+}
 ```
 
 # docker
