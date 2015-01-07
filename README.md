@@ -56,7 +56,7 @@ GET `https://api.sphere.ninja/rest/v1/activation/sites/XXXX-XXXX-XXXX-XXXX-XXXX?
    },
    "type" : "site"
 }
-```json
+```
 
 POST `https://api.sphere.ninja/rest/v1/activation/sites/XXXX-XXXX-XXXX-XXXX-XXXX/promote/TLC123?access_token=TOKEN_HERE`
 
