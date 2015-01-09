@@ -1,3 +1,5 @@
 node_modules
 *.zip
 Dockerrun.aws.json
+build
+public
