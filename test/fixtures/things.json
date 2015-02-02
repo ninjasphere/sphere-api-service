@@ -2,6 +2,12 @@
   {
     "promoted": true,
     "type": "mediaplayer",
+    "location": "df347c22-a678-11e4-88af-883314fa95ac"
+  },
+  null,
+  {
+    "promoted": true,
+    "type": "mediaplayer",
     "location": "df347c22-a678-11e4-88af-883314fa95ac",
     "device": {
       "thingId": "f7f446fb-a678-11e4-88af-883314fa95ac",
