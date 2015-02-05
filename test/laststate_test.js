@@ -15,7 +15,7 @@ describe('last state', function () {
   before(function () {
     service.run();
     return service.facet('redis').then(function (redis) {
-      return redis.client.set("state:123:7511a8ecc5:media", JSON.stringify(
+      return redis.client.set("state:5a156c9c-4072-1234-95e3-b39b4cc745d2:7511a8ecc5:media", JSON.stringify(
         {
           "params": [{
             "media": {
@@ -34,13 +34,14 @@ describe('last state', function () {
 
   it('should add laststate', function () {
 
-    var user = {id: 123};
+    var user = {id: "5a156c9c-4072-1234-95e3-b39b4cc745d2"};
 
     return when.all([
       service.facet('redis'),
       getThings.call()
     ]).spread(function (redis, results) {
       return lastState.getCachedLastStateForThings.call(this, redis, user, results).then(function(payload){
+        //console.log(payload[2].device.channels[1].lastState);
         expect(payload[2].device.channels[1].lastState).to.exist;
         expect(payload[2].device.channels[1].lastState.timestamp).to.exist;
         expect(payload[2].device.channels[1].lastState.payload.position).to.equal(239000);
