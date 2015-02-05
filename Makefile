@@ -14,7 +14,7 @@ all: build deploy
 
 build:
 	mkdir -p build
-	git clone https://github.com/ninjablocks/sphere-web-pair build/sphere-web-pair
+	[ -d build/sphere-web-pair ] || git clone git@github.com:ninjablocks/sphere-web-pair.git build/sphere-web-pair
 	cp -R build/sphere-web-pair/dist public
 	docker ${DOCKER_ARGS} build -t "docker-registry.sphere.ninja/ninjablocks/${PROJECT}:${SHA1}" .
 

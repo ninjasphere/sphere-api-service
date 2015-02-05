@@ -20,6 +20,9 @@
 	"redis": {
 		"url": "tcp://127.0.0.1:6379/"
 	},
+	"amqp": {
+		"url": "amqp://guest:guest@localhost:5672"
+	},
 	"frontendRest": {
 		"port": 5200
 	},
