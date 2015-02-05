@@ -14,7 +14,7 @@ describe('utils', function () {
     return when.all([
       restUtils.combineThings.call(this, things, devices, channels)
     ]).spread(function(result){
-      console.log('result', result);
+//      console.log('result', result);
       expect(result[0].device).to.exist;
       expect(result[0].device.channels).to.exist;
     });
