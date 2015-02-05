@@ -1,0 +1,20 @@
+[
+  {
+    "topic": "$device/7511a8ecc5",
+    "schema": "http://schema.ninjablocks.com/service/device",
+    "supportedMethods": null,
+    "supportedEvents": [],
+    "id": "7511a8ecc5",
+    "naturalId": "RINCON_000E588F126E01400:1-Living Room",
+    "naturalIdType": "sonos",
+    "name": "Living Room",
+    "thingId": "2cad13f4-acd8-11e4-98cf-883314fa95ac",
+    "channels": null,
+    "signatures": {
+      "ninja:manufacturer": "Sonos",
+      "ninja:productName": "Sonos Player",
+      "ninja:productType": "MediaPlayer",
+      "ninja:thingType": "mediaplayer"
+    }
+  }
+]
