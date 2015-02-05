@@ -1,0 +1,67 @@
+[
+  {
+    "topic": "$device/7511a8ecc5/channel/media",
+    "schema": "http://schema.ninjablocks.com/protocol/media",
+    "supportedMethods": ["playUrl"],
+    "supportedEvents": ["state"],
+    "id": "media",
+    "protocol": "media",
+    "deviceId": "7511a8ecc5",
+    "lastState": {
+      "timestamp": 1423101129125,
+      "payload": {
+        "media": {
+          "duration": 0,
+          "id": "x-rincon-mp3radio://shoutmedia.abc.net.au:10426/",
+          "title": "",
+          "type": "music-track"
+        },
+        "position": 0
+      }
+    }
+  },
+  {
+    "topic": "$device/7511a8ecc5/channel/volume",
+    "schema": "http://schema.ninjablocks.com/protocol/volume",
+    "supportedMethods": [
+      "set",
+      "volumeUp",
+      "volumeDown",
+      "mute",
+      "unmute"
+    ],
+    "supportedEvents": ["state"],
+    "id": "volume",
+    "protocol": "volume",
+    "deviceId": "7511a8ecc5",
+    "lastState": {
+      "timestamp": 1423101129206,
+      "payload": {
+        "level": 0.19,
+        "muted": false
+      }
+    }
+  },
+  {
+    "topic": "$device/7511a8ecc5/channel/control",
+    "schema": "http://schema.ninjablocks.com/protocol/media-control",
+    "supportedMethods": [
+      "play",
+      "pause",
+      "togglePlay",
+      "next",
+      "previous",
+      "stop"
+    ],
+    "supportedEvents": [
+      "playing",
+      "paused",
+      "stopped",
+      "idle"
+    ],
+    "id": "control",
+    "protocol": "media-control",
+    "deviceId": "7511a8ecc5",
+    "lastState": null
+  }
+]
