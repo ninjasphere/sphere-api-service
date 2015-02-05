@@ -41,9 +41,9 @@ describe('last state', function () {
       getThings.call()
     ]).spread(function (redis, results) {
       return lastState.getCachedLastStateForThings.call(this, redis, user, results).then(function(payload){
-        expect(payload[2].device.channels[0].lastState).to.exist;
-        expect(payload[2].device.channels[0].lastState.timestamp).to.exist;
-        expect(payload[2].device.channels[0].lastState.payload.position).to.equal(239000);
+        expect(payload[2].device.channels[1].lastState).to.exist;
+        expect(payload[2].device.channels[1].lastState.timestamp).to.exist;
+        expect(payload[2].device.channels[1].lastState.payload.position).to.equal(239000);
       })
     });
   });

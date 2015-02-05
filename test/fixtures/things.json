@@ -6,49 +6,31 @@
   },
   null,
   {
-    "promoted": true,
+    "id": "2cad13f4-acd8-11e4-98cf-883314fa95ac",
     "type": "mediaplayer",
-    "location": "df347c22-a678-11e4-88af-883314fa95ac",
+    "name": "SONOS: Living Room",
+    "deviceId": "7511a8ecc5",
+    "location": "0bb0dc2b-acd8-11e4-98cf-883314fa95ac",
+    "promoted": true,
     "device": {
-      "thingId": "f7f446fb-a678-11e4-88af-883314fa95ac",
-      "name": "Living Room",
-      "naturalId": "RINCON_000E588F126E01400:1-Living Room",
-      "id": "7511a8ecc5",
+      "topic": "$device/7511a8ecc5",
       "schema": "http://schema.ninjablocks.com/service/device",
+      "supportedMethods": null,
+      "supportedEvents": [],
+      "id": "7511a8ecc5",
+      "naturalId": "RINCON_000E588F126E01400:1-Living Room",
+      "naturalIdType": "sonos",
+      "name": "Living Room",
+      "signatures": {
+        "ninja:manufacturer": "Sonos",
+        "ninja:productName": "Sonos Player",
+        "ninja:productType": "MediaPlayer",
+        "ninja:thingType": "mediaplayer"
+      },
       "channels": [
         {
-          "schema": "http://schema.ninjablocks.com/protocol/media",
-          "id": "media",
-          "supportedEvents": [
-            "state"
-          ],
-          "topic": "$device/7511a8ecc5/channel/media",
-          "supportedMethods": [
-            "playUrl"
-          ],
-          "deviceId": "7511a8ecc5",
-          "protocol": "media"
-        },
-        {
-          "protocol": "volume",
-          "deviceId": "7511a8ecc5",
-          "supportedMethods": [
-            "set",
-            "volumeUp",
-            "volumeDown",
-            "mute",
-            "unmute"
-          ],
-          "supportedEvents": [
-            "state"
-          ],
-          "topic": "$device/7511a8ecc5/channel/volume",
-          "id": "volume",
-          "schema": "http://schema.ninjablocks.com/protocol/volume"
-        },
-        {
-          "protocol": "media-control",
-          "deviceId": "7511a8ecc5",
+          "topic": "$device/7511a8ecc5/channel/control",
+          "schema": "http://schema.ninjablocks.com/protocol/media-control",
           "supportedMethods": [
             "play",
             "pause",
@@ -63,24 +45,38 @@
             "stopped",
             "idle"
           ],
-          "topic": "$device/7511a8ecc5/channel/control",
           "id": "control",
-          "schema": "http://schema.ninjablocks.com/protocol/media-control"
+          "protocol": "media-control",
+          "deviceId": "7511a8ecc5",
+          "lastState": null
+        },
+        {
+          "topic": "$device/7511a8ecc5/channel/media",
+          "schema": "http://schema.ninjablocks.com/protocol/media",
+          "supportedMethods": ["playUrl"],
+          "supportedEvents": ["state"],
+          "id": "media",
+          "protocol": "media",
+          "deviceId": "7511a8ecc5",
+          "lastState": null
+        },
+        {
+          "topic": "$device/7511a8ecc5/channel/volume",
+          "schema": "http://schema.ninjablocks.com/protocol/volume",
+          "supportedMethods": [
+            "set",
+            "volumeUp",
+            "volumeDown",
+            "mute",
+            "unmute"
+          ],
+          "supportedEvents": ["state"],
+          "id": "volume",
+          "protocol": "volume",
+          "deviceId": "7511a8ecc5",
+          "lastState": null
         }
-      ],
-      "supportedEvents": [],
-      "topic": "$device/7511a8ecc5",
-      "signatures": {
-        "ninja:manufacturer": "Sonos",
-        "ninja:productName": "Sonos Player",
-        "ninja:productType": "MediaPlayer",
-        "ninja:thingType": "mediaplayer"
-      },
-      "naturalIdType": "sonos",
-      "supportedMethods": null
-    },
-    "deviceId": "7511a8ecc5",
-    "name": "SONOS: Living Room",
-    "id": "f7f446fb-a678-11e4-88af-883314fa95ac"
+      ]
+    }
   }
 ]
