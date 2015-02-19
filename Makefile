@@ -18,7 +18,7 @@ build:
 	docker ${DOCKER_ARGS} build -t "docker-registry.sphere.ninja/ninjablocks/${PROJECT}:${SHA1}" .
 
 local:
-	docker ${DOCKER_ARGS} run -t -i --rm --link ninja-redis:redis --link ninja-douitsu:douitsu --link ninja-mysql:mysql --link ninja-rabbit:rabbitmq -e "USVC_CONFIG_ENV=docker" -e "NODE_ENV=development" -p 5200:5200 -t "docker-registry.sphere.ninja/ninjablocks/${PROJECT}:${SHA1}"
+	docker ${DOCKER_ARGS} run -t -i --rm --link ninja-redis:redis --link ninja-douitsu:douitsu --link ninja-mysql:mysql --link ninja-rabbit:rabbitmq --link ninja-activation:activation -e "DEBUG=*" -e "USVC_CONFIG_ENV=docker" -e "NODE_ENV=development" -p 5200:5200 -t "docker-registry.sphere.ninja/ninjablocks/${PROJECT}:${SHA1}"
 
 deploy:
 	docker ${DOCKER_ARGS} push "docker-registry.sphere.ninja/ninjablocks/${PROJECT}:${SHA1}"

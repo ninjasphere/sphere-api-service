@@ -28,7 +28,7 @@
   },
   "activationService": {
     "server": {
-      "hostname": "localhost",
+      "hostname": "activation",
       "port": 5100
     },
     "signing": {
@@ -38,7 +38,7 @@
   },
   "modelStoreService": {
     "server": {
-      "hostname": "localhost",
+      "hostname": "modelstore",
       "port": 5600
     },
     "signing": {
