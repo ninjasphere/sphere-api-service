@@ -21,7 +21,7 @@
     "url": "tcp://redis:6379/"
   },
   "amqp": {
-    "url": "amqp://guest:guest@localhost:5672"
+    "url": "amqp://guest:guest@rabbitmq:5672"
   },
   "frontendRest": {
     "port": 5200
