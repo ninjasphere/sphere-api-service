@@ -21,7 +21,7 @@
     "url": "tcp://redis:6379/"
   },
   "amqp": {
-    "url": "amqp://guest:guest@rabbitmq:5672"
+    "url": "amqp://guest:guest@rabbit:5672"
   },
   "frontendRest": {
     "port": 5200
@@ -38,7 +38,7 @@
   },
   "modelStoreService": {
     "server": {
-      "hostname": "modelstore",
+      "hostname": "modelservice",
       "port": 5600
     },
     "signing": {
