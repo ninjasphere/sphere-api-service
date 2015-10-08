@@ -15,7 +15,7 @@
     "express-session": "^1.7.5",
     "passport": "~0.2.0",
     "passport-http-bearer": "^1.0.1",
-    "passport-ninja-blocks": "git+https://497ab28931e76036f81290607d59c4585c5369da:x-oauth-basic@github.com/ninjablocks/passport-ninja-blocks.git",
+    "passport-ninja-blocks": "git+https://github.com/ninjablocks/passport-ninja-blocks.git",
     "serve-static": "^1.8.0",
     "simple-errors": "0.0.4",
     "then-redis": "~0.3.12",
