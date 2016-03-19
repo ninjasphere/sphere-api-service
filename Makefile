@@ -9,8 +9,6 @@ SHA1 := $(shell git rev-parse --short HEAD | tr -d "\n")
 DOCKERRUN_FILE := Dockerrun.aws.json
 APP_FILE := ${SHA1}.zip
 
-all: build push deploy
-
 build:
 	mkdir -p build
 	[ -d build/sphere-web-pair ] || git clone git@github.com:ninjablocks/sphere-web-pair.git build/sphere-web-pair
